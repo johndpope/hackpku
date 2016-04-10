@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E97589F1CB918C70043D2F2 /* Model.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E97589E1CB918C70043D2F2 /* Model.mm */; };
+		6E9758A81CB919830043D2F2 /* caffe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9758A71CB919830043D2F2 /* caffe.framework */; };
+		6E9758A91CB919830043D2F2 /* caffe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9758A71CB919830043D2F2 /* caffe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E9758AC1CB919960043D2F2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9758AB1CB919960043D2F2 /* opencv2.framework */; };
+		6E9758B01CB919BD0043D2F2 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9758AE1CB919BD0043D2F2 /* libprotobuf.a */; };
+		6E9758B11CB919BD0043D2F2 /* boost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9758AF1CB919BD0043D2F2 /* boost.a */; };
+		6E9758B81CB924290043D2F2 /* ppse_googlenet_25M.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B21CB924290043D2F2 /* ppse_googlenet_25M.caffemodel */; };
+		6E9758B91CB924290043D2F2 /* ppse_googlenet.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B31CB924290043D2F2 /* ppse_googlenet.prototxt */; };
+		6E9758BA1CB924290043D2F2 /* ppse_googlenet_namelist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B41CB924290043D2F2 /* ppse_googlenet_namelist.txt */; };
+		6E9758BB1CB924290043D2F2 /* ppse_googlenet.binaryproto in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B51CB924290043D2F2 /* ppse_googlenet.binaryproto */; };
+		6E9758BC1CB924290043D2F2 /* init.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B61CB924290043D2F2 /* init.jpg */; };
+		6E9758BD1CB924290043D2F2 /* mean.binaryproto in Resources */ = {isa = PBXBuildFile; fileRef = 6E9758B71CB924290043D2F2 /* mean.binaryproto */; };
 		6E9CCEBE1CB8E3DD00663220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CCEBD1CB8E3DD00663220 /* AppDelegate.swift */; };
 		6E9CCEC01CB8E3DD00663220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CCEBF1CB8E3DD00663220 /* ViewController.swift */; };
-		6E9CCEC31CB8E3DD00663220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9CCEC11CB8E3DD00663220 /* Main.storyboard */; };
 		6E9CCEC51CB8E3DD00663220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9CCEC41CB8E3DD00663220 /* Assets.xcassets */; };
-		6E9CCEC81CB8E3DD00663220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9CCEC61CB8E3DD00663220 /* LaunchScreen.storyboard */; };
 		6E9CCED31CB8E3DD00663220 /* FaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CCED21CB8E3DD00663220 /* FaceTests.swift */; };
 		6E9CCEDE1CB8E3DD00663220 /* FaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CCEDD1CB8E3DD00663220 /* FaceUITests.swift */; };
 /* End PBXBuildFile section */
@@ -33,13 +43,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6E9758AA1CB919830043D2F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E9758A91CB919830043D2F2 /* caffe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6E97589D1CB918C70043D2F2 /* Face-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Face-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E97589E1CB918C70043D2F2 /* Model.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Model.mm; sourceTree = "<group>"; };
+		6E9758A01CB918DA0043D2F2 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		6E9758A71CB919830043D2F2 /* caffe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = caffe.framework; path = ../ext/framework/caffe.framework; sourceTree = "<group>"; };
+		6E9758AB1CB919960043D2F2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ext/framework/opencv2.framework; sourceTree = "<group>"; };
+		6E9758AE1CB919BD0043D2F2 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../ext/lib/libprotobuf.a; sourceTree = "<group>"; };
+		6E9758AF1CB919BD0043D2F2 /* boost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = boost.a; path = ../ext/lib/boost.a; sourceTree = "<group>"; };
+		6E9758B21CB924290043D2F2 /* ppse_googlenet_25M.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; name = ppse_googlenet_25M.caffemodel; path = ../ppse_googlenet_25M.caffemodel; sourceTree = "<group>"; };
+		6E9758B31CB924290043D2F2 /* ppse_googlenet.prototxt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ppse_googlenet.prototxt; path = ../ppse_googlenet.prototxt; sourceTree = "<group>"; };
+		6E9758B41CB924290043D2F2 /* ppse_googlenet_namelist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ppse_googlenet_namelist.txt; path = ../ppse_googlenet_namelist.txt; sourceTree = "<group>"; };
+		6E9758B51CB924290043D2F2 /* ppse_googlenet.binaryproto */ = {isa = PBXFileReference; lastKnownFileType = file; name = ppse_googlenet.binaryproto; path = ../ppse_googlenet.binaryproto; sourceTree = "<group>"; };
+		6E9758B61CB924290043D2F2 /* init.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = init.jpg; path = ../init.jpg; sourceTree = "<group>"; };
+		6E9758B71CB924290043D2F2 /* mean.binaryproto */ = {isa = PBXFileReference; lastKnownFileType = file; name = mean.binaryproto; path = ../mean.binaryproto; sourceTree = "<group>"; };
 		6E9CCEBA1CB8E3DD00663220 /* Face.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Face.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9CCEBD1CB8E3DD00663220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9CCEBF1CB8E3DD00663220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6E9CCEC21CB8E3DD00663220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E9CCEC41CB8E3DD00663220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E9CCEC71CB8E3DD00663220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E9CCEC91CB8E3DD00663220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E9CCECE1CB8E3DD00663220 /* FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9CCED21CB8E3DD00663220 /* FaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTests.swift; sourceTree = "<group>"; };
@@ -54,6 +89,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9758B01CB919BD0043D2F2 /* libprotobuf.a in Frameworks */,
+				6E9758B11CB919BD0043D2F2 /* boost.a in Frameworks */,
+				6E9758AC1CB919960043D2F2 /* opencv2.framework in Frameworks */,
+				6E9758A81CB919830043D2F2 /* caffe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +113,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E9758A11CB918E80043D2F2 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E9758AB1CB919960043D2F2 /* opencv2.framework */,
+				6E9758A71CB919830043D2F2 /* caffe.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		6E9758A21CB918EE0043D2F2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6E9758A01CB918DA0043D2F2 /* Model.h */,
+				6E97589E1CB918C70043D2F2 /* Model.mm */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6E9758A31CB919010043D2F2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E9CCEBF1CB8E3DD00663220 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		6E9758A41CB9190B0043D2F2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		6E9758A51CB919110043D2F2 /* global */ = {
+			isa = PBXGroup;
+			children = (
+				6E9CCEBD1CB8E3DD00663220 /* AppDelegate.swift */,
+				6E9CCEC91CB8E3DD00663220 /* Info.plist */,
+				6E97589D1CB918C70043D2F2 /* Face-Bridging-Header.h */,
+			);
+			name = global;
+			sourceTree = "<group>";
+		};
+		6E9758A61CB919160043D2F2 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				6E9758B21CB924290043D2F2 /* ppse_googlenet_25M.caffemodel */,
+				6E9758B31CB924290043D2F2 /* ppse_googlenet.prototxt */,
+				6E9758B41CB924290043D2F2 /* ppse_googlenet_namelist.txt */,
+				6E9758B51CB924290043D2F2 /* ppse_googlenet.binaryproto */,
+				6E9758B61CB924290043D2F2 /* init.jpg */,
+				6E9758B71CB924290043D2F2 /* mean.binaryproto */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		6E9758AD1CB919A40043D2F2 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				6E9758AE1CB919BD0043D2F2 /* libprotobuf.a */,
+				6E9758AF1CB919BD0043D2F2 /* boost.a */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
 		6E9CCEB11CB8E3DD00663220 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +201,14 @@
 		6E9CCEBC1CB8E3DD00663220 /* Face */ = {
 			isa = PBXGroup;
 			children = (
-				6E9CCEBD1CB8E3DD00663220 /* AppDelegate.swift */,
-				6E9CCEBF1CB8E3DD00663220 /* ViewController.swift */,
-				6E9CCEC11CB8E3DD00663220 /* Main.storyboard */,
+				6E9758AD1CB919A40043D2F2 /* 3rdParty */,
+				6E9758A61CB919160043D2F2 /* resource */,
+				6E9758A51CB919110043D2F2 /* global */,
+				6E9758A41CB9190B0043D2F2 /* view */,
+				6E9758A31CB919010043D2F2 /* controller */,
+				6E9758A21CB918EE0043D2F2 /* model */,
+				6E9758A11CB918E80043D2F2 /* framework */,
 				6E9CCEC41CB8E3DD00663220 /* Assets.xcassets */,
-				6E9CCEC61CB8E3DD00663220 /* LaunchScreen.storyboard */,
-				6E9CCEC91CB8E3DD00663220 /* Info.plist */,
 			);
 			path = Face;
 			sourceTree = "<group>";
@@ -135,6 +241,7 @@
 				6E9CCEB61CB8E3DD00663220 /* Sources */,
 				6E9CCEB71CB8E3DD00663220 /* Frameworks */,
 				6E9CCEB81CB8E3DD00663220 /* Resources */,
+				6E9758AA1CB919830043D2F2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +336,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E9CCEC81CB8E3DD00663220 /* LaunchScreen.storyboard in Resources */,
+				6E9758B81CB924290043D2F2 /* ppse_googlenet_25M.caffemodel in Resources */,
+				6E9758B91CB924290043D2F2 /* ppse_googlenet.prototxt in Resources */,
+				6E9758BA1CB924290043D2F2 /* ppse_googlenet_namelist.txt in Resources */,
+				6E9758BB1CB924290043D2F2 /* ppse_googlenet.binaryproto in Resources */,
+				6E9758BC1CB924290043D2F2 /* init.jpg in Resources */,
+				6E9758BD1CB924290043D2F2 /* mean.binaryproto in Resources */,
 				6E9CCEC51CB8E3DD00663220 /* Assets.xcassets in Resources */,
-				6E9CCEC31CB8E3DD00663220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E97589F1CB918C70043D2F2 /* Model.mm in Sources */,
 				6E9CCEC01CB8E3DD00663220 /* ViewController.swift in Sources */,
 				6E9CCEBE1CB8E3DD00663220 /* AppDelegate.swift in Sources */,
 			);
@@ -291,25 +403,6 @@
 			targetProxy = 6E9CCEDA1CB8E3DD00663220 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6E9CCEC11CB8E3DD00663220 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E9CCEC21CB8E3DD00663220 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6E9CCEC61CB8E3DD00663220 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E9CCEC71CB8E3DD00663220 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6E9CCEE01CB8E3DD00663220 /* Debug */ = {
@@ -399,11 +492,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext/framework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ext/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Face/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zzy.Face;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Face/Face-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,11 +520,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext/framework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ext/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Face/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zzy.Face;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Face/Face-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +608,7 @@
 				6E9CCEE41CB8E3DD00663220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9CCEE51CB8E3DD00663220 /* Build configuration list for PBXNativeTarget "FaceTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +617,7 @@
 				6E9CCEE71CB8E3DD00663220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9CCEE81CB8E3DD00663220 /* Build configuration list for PBXNativeTarget "FaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +626,7 @@
 				6E9CCEEA1CB8E3DD00663220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
